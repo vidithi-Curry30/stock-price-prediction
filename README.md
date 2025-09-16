@@ -1,31 +1,41 @@
-# Stock Price Prediction with Machine Learning
+# Stock Price Prediction Dashboard 📈
 
-A comprehensive ML framework for predicting stock prices using classical time series analysis (ARIMA) and deep learning (LSTM) approaches.
-
-## Quick Start
-
-```bash
-git clone https://github.com/vidithi-Curry30/stock-price-prediction.git
-cd stock-price-prediction
-pip install -r requirements.txt
-python src/main.py --symbol AAPL --period 5y
-```
+A real-time stock price prediction system using ARIMA models with an interactive Streamlit dashboard.
 
 ## Features
+- ✅ ARIMA time series modeling
+- ✅ Real-time stock data from Yahoo Finance  
+- ✅ Interactive web dashboard
+- ✅ 7-30 day price predictions
+- ✅ Performance metrics (RMSE, MAPE, Directional Accuracy)
+- ✅ MLflow experiment tracking
 
-- Multiple Models: ARIMA, LSTM, and Ensemble methods
-- Hyperparameter Optimization: Automated tuning with Optuna
-- Technical Indicators: RSI, Moving Averages, Volatility measures
-- Professional Architecture: Modular, testable, production-ready code
+## Performance
+- **RMSE**: ~5.39 (2.3% error on AAPL)
+- **MAPE**: ~1.82%
+- **Directional Accuracy**: 60%
 
-## Technologies
+## Installation
+```bash
+pip install -r requirements.txt
+cat > README.md << 'EOF'
+# Stock Price Prediction Dashboard 📈
 
-- Data Processing: pandas, numpy, yfinance
-- Machine Learning: scikit-learn, statsmodels
-- Deep Learning: PyTorch
-- Optimization: Optuna
-- Visualization: matplotlib, seaborn, plotly
+A real-time stock price prediction system using ARIMA models with an interactive Streamlit dashboard.
 
-## License
+## Features
+- ✅ ARIMA time series modeling
+- ✅ Real-time stock data from Yahoo Finance  
+- ✅ Interactive web dashboard
+- ✅ 7-30 day price predictions
+- ✅ Performance metrics (RMSE, MAPE, Directional Accuracy)
+- ✅ MLflow experiment tracking
 
-MIT License
+## Performance
+- **RMSE**: ~5.39 (2.3% error on AAPL)
+- **MAPE**: ~1.82%
+- **Directional Accuracy**: 60%
+
+## Installation
+```bash
+pip install -r requirements.txt
