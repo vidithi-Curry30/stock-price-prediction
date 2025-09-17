@@ -21,3 +21,16 @@ I developed VADPS (Volatility-Adjusted Directional Probability Score) - a novel 
 
 ## 🚀 Quick Start
 ```bash
+# Clone repository
+git clone https://github.com/vidithi-Curry30/stock-price-prediction.git
+cd stock-price-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run quick demo
+python demo.py MSFT
+
+# Launch interactive dashboard
+streamlit run app.py
+```
