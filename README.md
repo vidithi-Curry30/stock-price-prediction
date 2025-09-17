@@ -39,8 +39,8 @@ prediction = model.predict(7)  # Returns all 7 days
 
 ## My VADPS approach: Probability-weighted filtering
 prediction = enhanced_model.predict_with_vadps(7)
-# Returns: {'day': 1, 'price': 526.68, 'confidence': 0.722, 'tradeable': True}
-# Only days with >65% confidence are marked tradeable
+Returns: {'day': 1, 'price': 526.68, 'confidence': 0.722, 'tradeable': True}
+Only days with >65% confidence are marked tradeable
 
 ##Project Structure
 ├── src/
