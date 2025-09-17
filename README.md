@@ -34,3 +34,26 @@ python demo.py MSFT
 # Launch interactive dashboard
 streamlit run app.py
 ```
+## Traditional approach: All predictions treated equally
+prediction = model.predict(7)  # Returns all 7 days
+
+## My VADPS approach: Probability-weighted filtering
+prediction = enhanced_model.predict_with_vadps(7)
+# Returns: {'day': 1, 'price': 526.68, 'confidence': 0.722, 'tradeable': True}
+# Only days with >65% confidence are marked tradeable
+
+##Project Structure
+├── src/
+│   ├── models/
+│   │   ├── arima_garch_model.py    # Core ARIMA-GARCH implementation
+│   │   ├── vadps_model.py          # Novel VADPS algorithm
+│   │   └── enhanced_prediction.py   # Combined system
+│   ├── strategy/
+│   │   └── personalized_algorithm.py # Trading strategies
+│   └── predict.py                   # Main prediction interface
+├── app.py                           # Streamlit dashboard
+├── demo.py                          # Quick demonstration
+├── run_final_test.py                # Validation script
+└── results/                         # Test outputs
+
+
