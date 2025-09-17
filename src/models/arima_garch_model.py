@@ -103,3 +103,8 @@ class ARIMAGARCHModel:
         }
         
         return predictions
+
+# Note: I chose GARCH(1,1) after testing various configurations.
+# Higher orders didn't improve accuracy enough to justify complexity.
+# The residual analysis was key - without validating white noise,
+# the confidence intervals were way off.
