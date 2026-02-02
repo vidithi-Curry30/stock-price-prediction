@@ -80,23 +80,6 @@ The VADPS innovation transforms raw predictions into actionable intelligence:
 | False Signals | ~45% | ~35% | <20% |
 | Sharpe Ratio | 0.8 | 1.2 | 1.8+ |
 
-### Real-World Impact
-When backtested on 6 months of data:
-- **MSFT**: System correctly identified 72.2% probability UP move (Day 1)
-- **GOOGL**: Flagged 80.8% probability DOWN move with high confidence
-- **AAPL**: Correctly avoided trading during uncertain period (0 signals)
-
-The selective approach means:
-- Lower transaction costs (70% fewer trades)
-- Reduced market exposure (only in high-confidence positions)
-- Better capital efficiency (larger positions on stronger signals)
-- Professional-grade risk management (automatic filtering of weak setups)
-
-### Statistical Validation
-- All models pass Ljung-Box white noise tests (p > 0.05)
-- Residuals show no autocorrelation (model captures all patterns)
-- Out-of-sample testing maintains <2% MAPE consistency
-- Walk-forward validation confirms stability across market regimes
 ├── run_final_test.py                # Validation script
 └── results/                         # Test outputs
 
